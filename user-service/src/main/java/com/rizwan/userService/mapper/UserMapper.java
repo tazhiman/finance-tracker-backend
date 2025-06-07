@@ -17,7 +17,7 @@ public class UserMapper {
                 user.getFirstName(),
                 user.getLastName(),
                 user.getPhoneNumber(),
-                user.getRole() // <-- add roles here
+                user.getRole()
         );
     }
 
