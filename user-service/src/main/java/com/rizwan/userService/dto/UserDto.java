@@ -15,7 +15,15 @@ public class UserDto {
     private String firstName;
     private String lastName;
 
-    public UserDto(UUID id, @Email String email, String username, Object o, String firstName, String lastName, String phoneNumber, UserRole role) {
+    public UserDto(UUID id, @Email String email, String username, String password, String firstName, String lastName, String phoneNumber, UserRole role) {
+        this.id = id;
+        this.email = email;
+        this.username = username;
+        this.password = password;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.phoneNumber = phoneNumber;
+        this.role = role;
     }
 
     // Getters and setters

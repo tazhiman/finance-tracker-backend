@@ -1,5 +1,7 @@
 package com.rizwan.userService.service;
 
+import com.rizwan.userService.dto.AuthResponseDto;
+import com.rizwan.userService.dto.PasswordUpdateDto;
 import com.rizwan.userService.dto.UserDto;
 
 import java.util.List;
@@ -8,11 +10,11 @@ public interface UserService {
     // NORMAL USER FUNCTIONS
     UserDto createUser(UserDto signUpUserDto);
 
-    UserDto authenticateUser(UserDto loginUserDto);
+    AuthResponseDto authenticateUser(UserDto loginUserDto);
 
     UserDto getCurrentUser();
 
-    UserDto updatePassword(UserDto updatePasswordUserDto);
+    UserDto updatePassword(PasswordUpdateDto passwordUpdateDto);
 
     UserDto updateUserDetails(UserDto updateUserDetailsDto);
 
@@ -24,7 +26,4 @@ public interface UserService {
     void deleteUserAdmin(Long id);
 
     List<UserDto> getAllUsersAdmin();
-
-
-
 }

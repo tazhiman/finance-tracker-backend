@@ -4,7 +4,6 @@ package com.rizwan.userService.entity;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import org.hibernate.annotations.UuidGenerator;
-import org.springframework.boot.autoconfigure.web.WebProperties;
 
 import java.util.UUID;
 
